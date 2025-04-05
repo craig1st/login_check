@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    min-height: 100vh;
+    background-image: url('log-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.log-with-main-col .login-list li {
+
+    list-style-type: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.log-with-main-col li {
+
+    list-style-type: none;
+
+}
+.log-with-inner.left .login-item{
+    background: url(cloud.png) no-repeat;
+}
+.log-with-inner.right .login-item{
+    background: url(cloud2.png) no-repeat;
+}
+.log-with-inner .login-item {
+
+    background-size: auto !important;
+    background-size: 100% 100% !important;
+    height: 118px;
+    width: 230px;
+    margin: 0 0 30px 0;
+    text-align: center;
+    padding: 46px 0 0 0;
+    position: relative;
+    font-weight: 600;
+    transition: 0.2s;
+
+}
+.log-with-inner.left .login-item:hover {
+
+    transform: translateX(20px);
+
+}
+.log-with-inner.right .login-item:hover {
+
+    transform: translateX(-20px);
+
+}
+.log-with-inner .login-item img{
+    margin: auto;   
+}
+
+.log-with-main-col li:last-child{
+    border: none;
+}
+
+.log-with-inner {
+
+    position: absolute;
+    top: 34%;
+    transform: translateY(-50%);
+
+}
+.log-with-inner.left{
+    left: 0px;
+}
+.log-in-col {
+
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.log-with-inner.right{
+    right: 0px;
+}  
+.log-with-main-col {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.log-with-main-col ul{
+    padding: 0px;
+    margin: 0px;
+}
+.login-form-slide {
+
+    position: absolute;
+    right: -100%;
+    transition: 0.2s;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 111111;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.login-form-slide.active{
+    right: 0px;
+}
+.log-with-content {
+
+    text-align: center;
+    max-width: 49%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+
+}
+.log-with-content.bottom {
+
+    font-size: 19px;
+    max-width: 49%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+#log-with {
+
+    width: 100%;
+
+}
+.log-with-content.top img {
+
+    max-width: 280px;
+    margin: 0 auto 20px;
+
+}
+.log-with-main-col .login-list li img {
+
+    max-width: 46px;
+    margin-top: -12px;
+
+}
+.log-with-main-col .login-item.outlook {
+
+    right: -200px;
+
+}
+.log-with-main-col .login-item.aol {
+
+    right: -65px;
+
+}
+.log-with-main-col .login-item.office {
+
+    left: -200px;
+
+}
+.log-with-main-col .login-item.yahoo {
+
+    left: -65px;
+
+}
+
+#close {
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+
+}
+@media(min-width: 0px) and (max-width: 991px){
+    .log-with-inner {
+
+        position: static;
+        transform: initial;
+        max-width: 340px;
+        margin: auto;
+    
+    }
+    .log-with-content {
+        max-width: 95%;
+        font-weight: 400;
+        font-size: 13px;
+
+    }
+    .log-with-content.top img {
+
+        max-width: 133px;
+        margin: 0 auto 10px;
+    
+    }
+    .log-with-content.bottom {
+
+        font-size: 13px;
+        max-width: 95%;
+        position: static;
+        transform: initial;
+    
+    }
+    .log-with-inner .login-item {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: static;
+        background: white !important;
+    
+    }
+    .log-with-main-col .login-list li img {
+
+        max-width: 32px;
+        margin-top: -5px;
+        float: left;
+        margin-right: 10px;
+    
+    }
+    .log-with-main-col .login-list .login-item {
+
+        display: table;
+        width: 100%;
+        transform: initial !important;
+        text-align: left;
+        padding: 12px 10px 4px;
+        border-bottom: solid 1px #d0d0d0;
+    
+    }
+    .log-with-content.top {
+
+        margin-bottom: 25px;
+    
+    }
+    .log-with-content.bottom {
+
+        margin-top: 25px;
+    
+    }
+    .url-popup .inner {
+        min-width: 320px;
+        min-height: 65px;
+        font-size: 14px;
+    
+    }
+}
+@media(min-width: 992px) and (max-width: 1300px){
+    .log-with-content.top img {
+
+        max-width: 159px;
+    
+    }
+    .log-with-content {
+        font-size: 13px;
+    }
+    .log-with-content.bottom {
+        font-size: 14px;
+    }
+    .log-with-inner .login-item {
+        height: 98px;
+        width: 210px;
+        margin: 0 0 25px 0;
+        padding: 36px 0 0 0;
+    }
+    .log-in-col {
+
+        max-width: 980px;
+    
+    }
+}
